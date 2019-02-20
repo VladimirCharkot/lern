@@ -35,9 +35,7 @@ class UTN(object):
                             'sld' : {'nombre' : 'Sólidos',
                                      'correlativas' : ['qm2']}
                             }
- #PRUEBA ROMPETODO 1.0
- SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-               
+
     sistemas = basicas.copy()
     sistemas.update(especificas_sistemas)
     
@@ -157,7 +155,10 @@ class Alum(object):
         
         # la remuevo de anotadas
         self.anotadas.remove(mat)
-        
+    
+    def lista_cursadas(self):
+        print("{}".format(self.cursadas))
+    
     def anotar(self, mat):
         if not(mat in self.carrera): 
             print("Esa materia no existe!")

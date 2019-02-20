@@ -6,7 +6,14 @@ Created on Tue Feb 19 08:44:16 2019
 @author: vlad
 """
 
-class Pato(object):
+class Animal():
+    
+    
+    def saludar(animal):
+        print (animal.hola())
+
+
+class Pato(Animal):
     
     def __init__(self, nom, edad):
         self.nombre = nom
@@ -34,8 +41,10 @@ class Patx(Pato):
     def decir_sexo(self):
         print(self.sexo)
 
+    def hola(self):
+        return "Quien eres tu?"
 
-class Rinoceronte(object):
+class Rinoceronte(Animal):
     def __init__(self, col):
         self.color = col
         
@@ -62,3 +71,4 @@ if __name__ == '__main__':
     saludar(p3)
     saludar(rino)
     saludar(pata)
+    saludar(p1)

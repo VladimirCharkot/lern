@@ -14,7 +14,7 @@ class TestAlum(unittest.TestCase):
     
     # set up... sin este método habría que volver a instanciar el alumno
     def setUp(self):
-        self.alumno = correlativas.Alum('El Vlado',correlativas.sistemas)
+        self.alumno = correlativas.Alum('El Vlado',correlativas.UTN.sistemas)
 
     def test_recibido(self):
         # comprueba que recibido sea falso
